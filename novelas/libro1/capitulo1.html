@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo</title>
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/capitulo.css">
+    <link rel="stylesheet" href="../../css/general_oscuro.css" id="modo-oscuro-css">
+    <link rel="stylesheet" href="../../css/accesibilidad.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">We All Read</div>
+        <nav>
+            <a href="../../index.html">Inicio</a>
+            <a href="../../catalogo.html">Catálogo</a>
+            <a href="../../acerca.html">Acerca</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mini-nav">
+            <a href="../../catalogo.html">Catálogo</a>
+            >
+            <a href="index.html">Libro 1</a>
+            >
+        </div>
+
+        <div class="accesibilidad">
+            <div id="accesibilidad-boton">
+                ☰
+            </div>
+
+            <div id="accesibilidad-menu">
+                <button onclick="cambiarTamano('+')">A+</button>
+                <button onclick="cambiarTamano('-')">A-</button>
+                <button onclick="alternarModo()">🌓</button>
+            </div>
+        </div>
+
+
+        <div class="content">
+
+            <h2 class="title_pg">Capítulo 1</h2>
+
+            <div class="navega">
+                <a href="">
+                    < Anterior</a>
+                        <a href="index.html">Lista de capítulo</a>
+                        <a href="">Siguiente ></a>
+            </div>
+
+            <div class="contenido">
+                <div class="texto" id="contenido" style="white-space: pre-wrap; padding: 17px; margin-top: 10px;">
+                </div>
+
+
+
+            </div>
+
+            <div class="navega">
+                <a href="">
+                    < Anterior</a>
+                        <a href="libro_base.html">Lista de capítulo</a>
+                        <a href="">Siguiente ></a>
+            </div>
+
+            <hr>
+
+            <div class="comentarios">
+                <h3>Comentarios</h3>
+                <form action="">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </div>
+
+    </main>
+
+    <footer>
+        We All Road 2025 - @Nicols74A
+    </footer>
+
+    <script src="../../js/accesibilidad.js"></script>
+
+
+
+
+    <script src="../../js/cargarTexto.js">
+        cargarTexto(1);
+        alert("El texto se ha cargado correctamente.");
+    </script>
+
+</body>
+
+</html>

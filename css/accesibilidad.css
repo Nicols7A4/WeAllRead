@@ -1,0 +1,75 @@
+#accesibilidad-boton{
+    font-size: 2em;
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+/*#accesibilidad-boton {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #333;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}*/
+
+#accesibilidad-menu{
+    scale:calc(1.5);
+    position: fixed;
+     right: 20px; 
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+    padding-right: 50px;
+}
+
+/*
+#accesibilidad-menu {
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  background: #444;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+*/
+#accesibilidad-menu button {
+  background: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  right: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+
+  transition: all 0.3s ease;
+}
+
+#accesibilidad-menu button:hover{
+  background: #777;
+  color: white;
+}
+
+
+
+
+@media (max-width: 600px){
+    #accesibilidad-boton{
+      top: 5px;
+      scale: calc(0.9);
+    }
+    #accesibilidad-menu{
+      right: 0px;
+      top: 40px;
+    }
+  
+}

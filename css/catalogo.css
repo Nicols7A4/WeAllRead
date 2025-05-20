@@ -1,0 +1,52 @@
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.libro{
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 10PX;
+
+    width: 300px;
+    padding: 20px;
+
+    text-align: justify;
+
+    color: #f4f4f4;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.3s ease;
+    /* transition: scale 0.3s ease; */
+
+    text-decoration: none;
+
+}
+.libro h3{
+    font-size: 1.5em;
+    margin: 10px 0;
+    
+}
+
+img{
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.libro:hover{
+    background-color:  #d3d3d3;
+    color: #333;
+    /* scale: 1.05; */
+    scale: 1.05;
+}
+
+.libro-link{
+    text-decoration: none;
+    color: #333
+}
+

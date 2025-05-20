@@ -1,0 +1,95 @@
+.contenido{
+    padding : 70px 70px;
+    text-align: justify;
+    max-width: 1000px;
+    margin: 10px auto;
+    font-size: 1.2em;
+}
+
+.navega{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navega a{
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #fff;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.navega a:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+
+/* comentarios */
+.comentarios {
+    text-align: center; /* Centra el título */
+    margin-top: 20px;
+}
+
+.comentarios form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos del formulario */
+    gap: 10px;
+}
+
+.comentarios textarea {
+    resize: none; /* Desactiva el redimensionamiento */
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.comentarios input[type="submit"] {
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #333;
+    transition: all 0.3s ease
+}
+
+.comentarios input[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+span{
+    color: red;
+    align-self: center;
+}
+
+.contenido{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+}
+
+
+
+@media (max-width: 600px) {
+    .contenido{
+        padding : 20px 5px;
+        font-size: 0.85em;
+    }
+
+    .navega{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}

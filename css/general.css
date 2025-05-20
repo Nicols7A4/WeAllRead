@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #f4f4f4;
+}
+
+
+/* HEADER */
+header{
+    /* background-color: #000000; */
+    color: white;
+    /* padding: 20px; */
+}
+
+.logo{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #333;
+    margin: 20px;
+    /* background-color: blue; */
+    text-align: center;
+
+}
+
+nav{
+    background-color: #333;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    margin: 5px 20px;
+
+    border-radius: 5px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    /* padding: 10px 20px; */
+    padding: 10px;
+    border-radius: 5px;
+
+    width: 100px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover{
+    background-color: #f4f4f4;
+    color: black;
+    /* box-shadow: 5px 5px 5px 5px #000; */
+}
+
+@media screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+        align-items: center;
+    }
+    nav a{
+        width: 200px;
+    }
+}
+
+
+/* MAIN */
+/* ---------------------------------------------- */
+.mini-nav{
+    font-size: 0.85em;
+    color: #aaa;
+    
+    margin-bottom: 20px;
+
+    display: inline-block;
+}
+.mini-nav a{
+    color: #aaa;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.mini-nav a:hover{
+    color: #555;
+    text-decoration: underline;
+}
+
+
+
+/* ---------------------------------------------- */
+main{
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+}
+
+.title_pg{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.bton-p{
+    background-color: #333;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+
+.bton-p:hover{
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+/* FOOTER */
+footer{
+    background-color: #777;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .logo{
+        font-size: 1.5em;
+    }
+    nav a{
+        width: 100px;
+    }
+    .mini-nav{
+        font-size: 1.1em;
+    }
+    .title_pg{
+        font-size: 1.8em;
+        text-align: center;
+    }
+    /* body{
+        font-size: 1.15em;
+    } */
+    
+}
